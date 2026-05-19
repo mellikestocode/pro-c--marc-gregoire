@@ -18,12 +18,17 @@ int main()
     std::println("Min double value: {}", numeric_limits<double>::min());
     std::println("Lowest double value: {}", numeric_limits<double>::lowest());
 
-    std::println("\nCasting instead of the casting couch");
+    std::println("\nCasting values instead of joining a casting couch crew");
 
     float myFloat { 3.14f };
     int i1 { (int)myFloat };
     int i2 { int (myFloat) };
     int i3 { static_cast<int>(myFloat) };
 
+    int i { 0 };
+    while (i < 5) {
+        println("This is silly.");
+        ++i;
+    }
     return 0; // return non-zero value if error
 }
