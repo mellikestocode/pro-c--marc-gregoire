@@ -30,5 +30,18 @@ int main()
         println("This is silly.");
         ++i;
     }
+    int i { 8 };
+    int* myIntegerPointer { &i };
+
+    Employee* anEmployee { new Employee { 'J', 'D', 42, 80'000 } };
+    println("{}", (*anEmployee).salary);
+    delete anEmployee; anEmployee = nullptr;
     return 0; // return non-zero value if error
 }
+
+struct Employee {
+    char firstInitial;
+    char lastInitial;
+    int employeeNumber;
+    int salary { 600,000 };
+};
