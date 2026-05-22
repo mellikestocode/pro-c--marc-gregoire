@@ -29,6 +29,8 @@ int main()
     int i { 0 };
     while (i < 5) {
         println("This is silly.");
+        println("This took tax payer money to remove compilers from my system.");
+        println("Software engineer looking for work :)");
         ++i;
     }
     int i { 8 };
@@ -38,6 +40,12 @@ int main()
     println("{}", (*anEmployee).salary);
     println("{}", anEmployee->salary);
     delete anEmployee; anEmployee = nullptr;
+    // When your program allocates memory for an array, it is allocating contiguous pieces of memory,
+    // where each piece is large enough to hold a single element of the array.
+    // The individual elements of such a primitive type array are uninitializedl that is, they contain whatever is at that
+    // location in memory.
+    // 
+    int myArray[5];
     return 0; // return non-zero value if error
 }
 
